@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home - Smart Supply</title>
+  <!-- Styles -->
+  <link rel="stylesheet" href="CSS/main.css" />
+  <link rel="stylesheet" href="CSS/index.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+  <!-- Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js"></script>
+  <script src="js/auth.js" defer></script>
+</head>
+
+<body>
+<header class="main-header">
+  <div class="header-container">
+    <div class="header-content">
+
+      <!-- Logos -->
+      <div class="header-logos">
+        <img src="Image/SD logo.png" alt="Sports Direct Logo" class="header-logo">
+        <a href="login.html"><img src="Image/SS logo.png" alt="Smart Supply Logo" class="header-logo secondary"></a>
+      </div>
+
+      <!-- Hamburger icon -->
+        <div class="hamburger" onclick="toggleMenu()">
+          &#9776;
+        </div>
+
+      <!-- Navigation -->
+      <nav class="nav-links" id="navLinks">
+        <a href="index.html" class="active">Home</a> <!-- currently active -->
+        <a href="about.html">About Us</a>
+        <a href="upload.html">Upload Data</a>
+
+        <div class="dropdown">
+            <div class="dropdown-toggle">Dashboards &#9662;</div>
+            <div class="dropdown-menu">
+              <a href="forecast.html">Forecasting</a>
+              <a href="sales.html">Sales</a>
+              <a href="inventory.html">Inventory</a>
+            </div>
+        </div>
+        
+        <a href="#" onclick="logout()">Logout</a>
+      </nav>
+    </div>
+  </header>
+<section class="home">
+  <!-- Welcome Section -->
+<section class="home-welcome">
+     <div class="text-overlay">
+      <h1 id="user-greeting">Welcome Back, Dear User!</h1><br>
+      <h3><i>Empowering Decisions with Data</i></h3>
+        <p>Your data journey starts here. Welcome aboard for your next smart move!</p><hr>
+  </div>
+</section>
+
+  <!-- Landing Banner -->
+  <section class="home-hero">
+  <div class="text-overlay">
+    <h1>Smarter Forecaster, Stronger Supply</h1>
+    <p>Start by uploading your sales and inventory files to begin forecasting.</p>
+    <a href="upload.html" class="hero-button">Upload File</a>
+  </div>
+  </section>
+
+<section class="feature-highlights">
+  <h2 class="section-title">Feature Highlights</h2>
+  <div class="feature-grid">
+    <div class="feature-card">
+      <i class="fa-regular fa-brain fa-4x"></i> <!-- Brain icon for AI -->
+      <h3>AI-Powered Forecasting</h3>
+      <p>Use historical data and seasonality trends to generate forecast that drive replenishment decisions.</p>
+    </div>
+    <div class="feature-card">
+      <i class="fa-solid fa-chart-column fa-4x"></i> <!-- Chart icon for Dashboards -->
+      <h3>Interactive Dashboards</h3>
+      <p>Visualize product performance across branches, updated dynamically with every upload.</p>
+    </div>
+    <div class="feature-card">
+      <i class="fas fa-cogs fa-4x"></i> <!-- Cog icon for Inventory -->
+      <h3>Inventory Insights</h3>
+      <p>Identify underperforming stock, minimize overstocking, and reduce lost sales with data-backed planning tools.</p>
+    </div>
+  </div>
+</section>
+
+</section>
+
+<section class="cta-section">
+  <hr>
+  <h3><i>Smarter Forecasts, Stronger Supply.</i></h3>
+  <p>Smart SUPPLY is your internal command center for smarter retail operations—designed by analysts, for decision-makers.</p>
+  <a href="about.html" class="hero-button">Learn More About Us</a>
+</section>
+
+<footer class="main-footer">
+  <p>&copy; 2025 Smart SUPPLY. | Developed for Sports Direct x Sunway Capstone Project</p>
+</footer>
+
+</body>
+</html>

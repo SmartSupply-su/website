@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap');
+
+
+body {
+  margin: 0;
+  font-family: 'Inter', sans-serif;
+}
+
+/* Upload Page Background */
+body.upload-page {
+  background: url('../Image/upload_background.png') no-repeat center center fixed;
+  background-size: cover;
+  min-height: 100vh;
+  display: flex;
+  overflow:hidden;
+  flex-direction: column;
+}
+
+.layout {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: calc(100vh - 120px); /* minus header height */
+  padding: 0 20px;
+}
+
+/* Upload Card Container */
+.upload-card {
+  background: white;
+  border-radius: 20px;
+  padding: 30px 25px;
+  width: 700px;
+  max-width: 100%;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.25);
+  color: black;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+
+/* Title */
+.upload-card h2 {
+  font-weight: 600;
+  font-size: 23px;
+  letter-spacing: 1px;
+  margin-bottom: 20px;
+}
+
+/* Upload Box Styling */
+.upload-box {
+  flex: 1 1 250px;
+  padding: 20px;
+  border: 2px dashed #ccc;
+  border-radius: 10px;
+  text-align: center;
+  min-width: 200px;
+  max-width: 300px;
+  background-color: #f9f9f9;
+}
+
+.upload-box.drag-over {
+  border-color: #5b8dfb;
+}
+
+.upload-boxes {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+
+/* Upload Icon */
+.upload-icon {
+  width: 70px;
+  margin-bottom: 12px;
+}
+
+/* Upload Text */
+.upload-box p {
+  font-size: 14px;
+  color: black;
+  margin-top: 10px;
+}
+
+/* Browse Link */
+.browse-link {
+  color: #0044ff;
+  cursor: pointer;
+  font-weight: 500;
+  text-decoration: underline;
+}
+
+/* File Display */
+.file-list {
+  margin-top: 10px;
+}
+
+.file-row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  font-size: 14px;
+}
+
+/* Upload Button */
+.upload-btn {
+  background: #0044ff;
+  border: none;
+  width: 100px;
+  border-radius: 25px;
+  padding: 10px 20px;
+  color: white;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background 0.3s ease;
+  display: block;
+  margin: 20px auto 0;
+}
+
+.upload-btn:hover {
+  background: #981703;
+}
+
+/* Remove Button */
+.remove-btn {
+  padding: 4px 8px;
+  font-size: 12px;
+  border: 1px solid #aaa;
+  background-color: #eee;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.dialog-container {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1000;
+}

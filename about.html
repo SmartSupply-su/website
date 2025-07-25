@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Us - Smart Supply</title>
+  <!-- Styles -->
+  <link rel="stylesheet" href="CSS/main.css" />
+  <link rel="stylesheet" href="CSS/about.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js"></script>
+  <script src="js/auth.js" defer></script>
+</head>
+
+<body>
+<header class="main-header">
+  <div class="header-container">
+    <div class="header-content">
+
+      <!-- Logos -->
+      <div class="header-logos">
+        <img src="Image/SD logo.png" alt="Sports Direct Logo" class="header-logo">
+        <a href="login.html"><img src="Image/SS logo.png" alt="Smart Supply Logo" class="header-logo secondary"></a>
+      </div>
+
+      <!-- Hamburger icon -->
+        <div class="hamburger" onclick="toggleMenu()">
+          &#9776;
+        </div>
+
+      <!-- Navigation -->
+      <nav class="nav-links" id="navLinks">
+        <a href="index.html">Home</a> 
+        <a href="about.html" class="active">About Us</a> <!-- currently active -->
+        <a href="upload.html">Upload Data</a>
+
+        <div class="dropdown">
+            <div class="dropdown-toggle">Dashboards &#9662;</div>
+            <div class="dropdown-menu">
+              <a href="forecast.html">Forecasting</a>
+              <a href="sales.html">Sales</a>
+              <a href="inventory.html">Inventory</a>
+            </div>
+        </div>
+        
+        <a href="#" onclick="logout()">Logout</a>
+      </nav>
+      
+    </div>
+  </header>
+
+<!-- About Us -->
+<section class="about-section">
+  <div class="about-intro-flex">
+    <img src="Image/SS logo 2.png" alt="Our Logo">
+    <div class="about-intro">
+      <h2>About Us</h2>
+      <hr>
+      <p><strong>Smart SUPPLY</strong> is a web-based internal forecasting system built in collaboration with Sports Direct to tackle the complex challenges of demand planning and inventory control across sports retail operations.</p>
+      <p>Developed by Business Analytics students as a capstone project, the system merges academic insight with real business needs to help stakeholders make smart, data-driven decisions.</p>   
+    </div>
+  </div>
+</section>
+
+<!-- Vision, Mission, What We Do, Why It Matters -->
+<section class="about-blocks-wrapper">
+  <div class="about-block">
+    <div class="about-vision">
+      <img src="Image/vision.png" alt="Our Vision">
+      <div class="about-content">
+        <h3>Our Vision</h3>
+        <p>To deliver a high-impact, user-friendly system that demonstrates the power of business analytics in the retail sector—and to contribute meaningful value to Sports Direct as part of our academic journey.</p>
+      </div>
+    </div>
+  
+    <div class="about-mission">
+      <div class="about-content">
+        <h3>Our Mission</h3>
+        <p>To apply our academic knowledge and analytical skills to create a practical, data-driven solution that helps Sports Direct optimize demand forecasting accuracy and thus enhance decision-making.</p>
+      </div>
+      <img src="Image/mission.jpg" alt="Our Mission">
+    </div>
+
+    <div class="about-do">
+      <img src="Image/what-we-do.jpg" alt="What We Do">
+      <div class="about-content">
+        <h3>What We Do</h3>
+        <p>Our system is designed to support retail operations by:</p>
+        <ul>
+          <li><strong>Forecasting Product Demand</strong>: Leveraging deep learning and sales data to anticipate future trends and customer needs.</li>
+          <li><strong>Streamlining Inventory Management</strong>: Minimizing stockouts and overstock situations through smarter stock planning.</li>
+          <li><strong>Providing Actionable Insights</strong>: Interactive dashboards to help managers make informed, real-time decisions.</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="about-matters">
+      <div class="about-content">
+        <h3>Why This Matters</h3>
+        <p>Retailers like Sports Direct face constant challenges in balancing supply with demand. Our project provides a scalable solution that supports data-driven planning—boosting efficiency, reducing waste, and ultimately improving the customer experience.</p>
+      </div>
+      <img src="Image/why-matters.png" alt="Why This Matters">
+    </div>
+  </div>
+</section>
+
+</section>
+
+<footer class="main-footer">
+  <p>&copy; 2025 Smart SUPPLY. | Developed for Sports Direct x Sunway Capstone Project</p>
+</footer>
+
+</body>
+</html>

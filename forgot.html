@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Forgot Password - Smart Supply</title>
+  <link rel="stylesheet" href="CSS/main.css">
+  <link rel="stylesheet" href="CSS/forgot.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2/dist/umd/supabase.min.js"></script>
+<script src="js/forgot.js" defer></script>
+
+</head>
+
+<body>
+    <div class="page-wrapper">
+    <header class="main-header">
+        <div class="header-content login-centered">
+        <div class="header-logos">
+        <img src="Image/SD logo.png" alt="Sports Direct Logo" class="header-logo">
+        <img src="Image/SS logo.png" alt="Smart Supply Logo" class="header-logo secondary">
+            </div>
+    </header>
+    
+  <div class="forgot-wrapper">
+    <div class="forgot-container">
+      <img src="Image/forgot.png" alt="Forgot Icon" class="forgot-icon">
+      <h2>Forgot your password?</h2>
+      <p>Enter your email so that we can send you a password reset link.</p>
+
+      <div class="form-group">
+        <label for="email">Email</label>
+        <input type="email" id="email" placeholder="e.g. username@domain.com" required>
+      </div>
+
+      <button id="send-btn">Send Email</button>
+      <p id="msg" class="msg"></p>
+
+      <a href="login.html" class="back-link">&#8592; Back to Login</a>
+    </div>
+  </div>
+
+  <footer class="main-footer">
+    <p>&copy; 2025 Smart SUPPLY. | Developed for Sports Direct x Sunway Capstone Project</p>
+  </footer>
+</body>
+</html>

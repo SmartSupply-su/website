@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap');
+
+body {
+  margin: 0;
+  font-family: 'Inter', sans-serif;
+}
+
+/* RESET LAYOUT */
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  box-sizing: border-box;
+}
+
+.layout {
+  display: flex;
+  flex: 1; /* Stretch to fill between header and footer */
+  overflow: hidden;
+  background-color: #6a7db3;
+  padding: 20px;
+}
+
+.sidebar {
+  width: 250px;
+  background-color: #f8f8f8;
+  padding: 35px;
+  box-shadow: 2px 0 10px rgba(0,0,0,0.1);
+  box-sizing: border-box;
+  margin-top: 20px; /* Match the height of your fixed header */
+  z-index: 1;
+}
+
+.sidebar-nav {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.nav-link {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.nav-link.active {
+  color: red;
+}
+
+.nav-link:hover {
+  color: red;
+  transform: translateX(4px);
+}
+
+.icon {
+  font-size: 25px;
+  margin-right: 10px;
+}
+
+.export-container {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  z-index: 20;
+}
+.export-btn {
+  background-color: #111;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  font-size: 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+.export-btn:hover {
+  background-color: red;
+}
+
+.page-content {
+  flex: 1;
+  overflow: auto;
+  background-color: #6a7db3;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.dashboard-frame iframe {
+  max-width: 1300px; 
+  width: 100%;
+  height: 100%;
+  border: none;
+  border-radius: 10px;
+}
+
+.dashboard-frame {
+  height: 100%;
+  width: 100%;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+}

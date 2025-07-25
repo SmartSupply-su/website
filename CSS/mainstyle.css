@@ -1,0 +1,135 @@
+.header-container {
+  margin: 0 auto;
+  padding: 0 6px; /* optional horizontal padding */
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.main-header {
+  width: 100%;
+  background-color: white;
+  padding: 24px 0px;  /* Match padding */
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  position: relative; /* Use fixed only if necessary */
+  z-index: 10;
+}
+
+.header-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 40px; /* Unified spacing - pick a value that works across both */
+}
+
+.header-content.login-centered {
+  justify-content: flex-start;  /* aligns left */
+  padding-right: calc(40px + 200px);  /* mimic nav space on right */
+}
+
+.header-logos {
+  display: flex;          /* ensures horizontal layout */
+  align-items: center;    /* vertical alignment */
+  gap: 16px;             /* space between the two logos */
+}
+
+.header-logo {
+  height: 40px;           
+  display: block;
+}
+
+.header-logo.secondary {
+  height: 30px;           
+  display: block;
+}
+
+
+/* NAVIGATION STYLES */
+.nav-links {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  gap: 16px;
+}
+
+/* Uniform style for both links and dropdown toggle */
+.nav-links a,
+.dropdown-toggle {
+  font-size: 14px;
+  font-weight: 600;
+  color: black;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 40px;
+  cursor: pointer;
+  line-height: 1;
+  padding: 0;
+  margin: 0;
+}
+
+.nav-links a.active {
+  color: red;
+}
+
+.nav-links a:hover,
+.dropdown-toggle:hover {
+  color: red;                  /* Red text on hover */
+  text-decoration: none;       /* Optional: no underline */
+}
+
+/* DROPDOWN STYLES */
+.dropdown {
+  position: relative;
+  display: flex; /* Keep in line with nav items */
+  align-items: center;
+}
+
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: white;
+  min-width: 140px;
+  font-size: 13px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  z-index: 1;
+}
+
+.dropdown-menu a {
+  display: flex;               /* Enables flex layout */
+  align-items: center;         /* Vertically centers the text */
+  justify-content: flex-start; /* Aligns text to the left inside the box */
+  height: 40px;                /* Standard height for each item */
+  padding: 0 14px;             /* Horizontal padding */
+  color: black;
+  text-decoration: none;
+}
+
+
+.dropdown-menu a:hover {
+  background-color: #f1f1f1;
+}
+
+/* Show dropdown on hover */
+.dropdown:hover .dropdown-menu {
+  display: block;
+}
+
+body {
+  margin: 0;
+  font-family: 'Inter', sans-serif;
+}
+
+.main-footer {
+  text-align: center;
+  padding: 8px 12px;
+  font-size: 12px;
+  background-color: #ffffff;
+  color: #444;
+  border-top: 1px solid #ddd;
+}
+

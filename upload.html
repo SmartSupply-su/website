@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Upload - Smart Supply</title>
+  <link rel="stylesheet" href="CSS/main.css" />
+  <link rel="stylesheet" href="CSS/upload.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js"></script>
+  <script src="js/auth.js" defer></script>
+  <style>body { display: none; }</style>
+</head>
+
+<body class="upload-page">
+
+  <div class="page-wrapper">
+
+    <!-- HEADER -->
+    <header class="main-header">
+      <div class="header-content">
+        <div class="header-logos">
+          <img src="Image/SD logo.png" alt="Sports Direct Logo" class="header-logo" />
+          <img src="Image/SS logo.png" alt="Smart Supply Logo" class="header-logo secondary" />
+        </div>
+
+        <!-- Hamburger icon -->
+        <div class="hamburger" onclick="toggleMenu()">
+          &#9776;
+        </div>
+
+        <nav class="nav-links" id="navLinks">
+          <a href="index.html">Home</a>
+          <a href="about.html">About Us</a>
+          <a href="upload.html" class="active">Upload Data</a>
+
+          <div class="dropdown">
+            <div class="dropdown-toggle">Dashboards &#9662;</div>
+            <div class="dropdown-menu">
+              <a href="forecast.html">Forecasting</a>
+              <a href="sales.html">Sales</a>
+              <a href="inventory.html">Inventory</a>
+            </div>
+          </div>
+
+        <a href="#" onclick="logout()">Logout</a>
+        
+        </nav>
+      </div>
+    </header>
+
+    <!-- Upload Section -->
+    <div class="layout">
+      <div class="upload-card">
+        <h2>Upload Your Files</h2>
+
+        <!-- Flex container for both upload boxes -->
+        <div class="upload-boxes">
+      
+          <!-- Sales Upload Box -->
+          <div class="upload-box" id="drop-area-sales">
+            <img src="Image/cloud-upload.png" alt="upload" class="upload-icon" />
+            <p>Sales CSV: Drop here or <label for="salesFileInput" class="browse-link">Browse</label></p>
+            <input type="file" id="salesFileInput" accept=".csv" hidden />
+            <div class="file-list" id="salesFileList"></div>
+          </div>
+
+          <!-- Inventory Upload Box -->
+          <div class="upload-box" id="drop-area-inventory">
+            <img src="Image/cloud-upload.png" alt="upload" class="upload-icon" />
+            <p>Inventory CSV: Drop here or <label for="inventoryFileInput" class="browse-link">Browse</label></p>
+            <input type="file" id="inventoryFileInput" accept=".csv" hidden />
+            <div class="file-list" id="inventoryFileList"></div>
+          </div>
+
+        </div>
+
+        <!-- Upload Button -->
+        <button class="upload-btn" id="uploadBtn" disabled>Upload</button>
+      </div>
+    </div>
+
+
+<script type="module" src="js/upload.js"></script>
+
+    <!-- FOOTER -->
+    <footer class="main-footer">
+      <p>&copy; 2025 Smart SUPPLY. | Developed for Sports Direct x Sunway Capstone Project</p>
+    </footer>
+
+  </div>
+  
+
+
+</body>
+</html>
